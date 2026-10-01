@@ -76,6 +76,12 @@ const platform: SocialSharePlatform = "whatsapp";
 const theme: SocialShareTheme = "dark";
 const style: SocialShareButtonStyle = "primary";
 
+// @ts-expect-error numbers are not valid themes
+const invalidTheme: SocialShareTheme = 123;
+
+// @ts-expect-error CustomAdapter requires an onTrack callback
+const invalidCustomAdapter = new CustomAdapter();
+
 // Test 5: React component usage
 export function TestReactComponent() {
   return React.createElement(ReactSocialShareButton, {

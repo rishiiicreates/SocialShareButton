@@ -11,9 +11,10 @@ export interface SocialShareAnalyticsPayload {
   /** Event name, e.g. 'social_share_click', 'social_share_copy', etc. */
   eventName:
     | "social_share_click"
+    | "social_share_success"
     | "social_share_copy"
-    | "social_share_modal_open"
-    | "social_share_modal_close"
+    | "social_share_popup_open"
+    | "social_share_popup_close"
     | "social_share_error"
     | (string & {});
   /** Interaction category */

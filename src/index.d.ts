@@ -3,6 +3,5 @@
  * @license GPL-3.0
  */
 
-export * from "./social-share-button";
-export { default } from "./social-share-button";
-export * from "./social-share-analytics";
+export type * from "./social-share-button";
+export type * from "./social-share-analytics";
